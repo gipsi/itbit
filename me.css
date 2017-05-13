@@ -1,0 +1,243 @@
+body{
+ 
+  background: #339966;
+  color: #eeffff;
+  font-family: Verdana, Geneva, Sans-serif;
+  font-size: 120%;
+  font-weight: 600;
+  max-width: 500px;
+  margin: auto;
+  border: 9px ridge #73AD21;
+  padding: 30px 30px 30px 30px;
+}
+ 
+span {
+  display: block;
+  font-weight: 400;
+}
+.month {
+  float: left;
+}
+.week {
+  display: block;
+}
+.week time {
+  width: 30px;
+  margin: 2px 0;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #aaa;
+}
+.week:first-of-type {
+  text-align: right;
+}
+a{
+  color: #66ff00;
+}
+h1{
+  color: #ddffcc;
+}
+h2{
+  color: #ddffcc;
+}
+h3{ 
+  color: #ddffff;
+}
+h4{
+  color: #ddffcc;
+}    
+h5{
+  color: #ddffff; 
+} 
+ 
+/* tab control CSS: the tabs */
+.tabs
+{
+position: fixed;
+top: 1px;
+height: 20px;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.tabs li
+{
+display: inline;
+float: left;
+padding: 0;
+margin: 0 0 0 10px;
+}
+.tabs a
+{
+display: block;
+width: 5em;
+height: 38px;
+line-height: 18px;
+text-align: center;
+text-decoration: none;
+color: #66ff00;
+background-color: #6699ff;
+border: 3px ridge #ff66ff;
+border-radius:95px;
+  box-shadow: 25px 25px 10px 10px rgba(60,10,60,0.5);
+outline: 0 none;
+}
+.tabs a.active, .tabs a:hover, .tabs a:focus, .tabs a:active
+{
+color: #73ad21;
+background-color: #ffff66;
+border-bottom-color: #73ad21;
+}   
+  .heart { 	
+position: fixed;
+content: "";
+right: 45%;
+top:70%;
+  box-shadow: 90px 90px 30px 30px rgba(60,10,60,0.5);
+z-index: 2;
+} 
+.heart:before, .heart:after {
+ position: absolute; 
+content: "";
+ left: 80px; 
+top: 90%;
+width: 80px; 
+height: 115px; 
+background: #3333ff;
+ -moz-border-radius: 50px 50px 0 0; 
+border-radius: 50px 50px 0 0; 
+-webkit-transform: rotate(-45deg);
+ -moz-transform: rotate(-45deg); 
+-ms-transform: rotate(-45deg); 
+-o-transform: rotate(-45deg);
+ transform: rotate(-45deg); 
+-webkit-transform-origin: 0 100%; 
+-moz-transform-origin: 0 100%; 
+-ms-transform-origin: 0 100%;
+ -o-transform-origin: 0 100%;
+ transform-origin: 0 100%; 
+} 
+.heart:after {
+ left: 0; -
+webkit-transform: rotate(45deg); 
+-moz-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ -o-transform: rotate(45deg);
+ transform: rotate(45deg); 
+-webkit-transform-origin: 100% 100%;
+ -moz-transform-origin: 100% 100%;
+ -ms-transform-origin: 100% 100%; 
+-o-transform-origin: 100% 100%;
+ transform-origin :100% 100%; 
+}
+.footer {
+  position: fixed;
+  top: 90%;
+display: flex;
+justify-content: space-between;
+   box-shadow: 10px 60px 60px 60px rgba(60,10,60,0.5);
+border: 10px ridge #73AD21;
+  border-radius:95px;
+z-index:1;
+}
+.footer-item {
+border: 10px ridge #73AD21;
+  border: 3px ridge #ff66ff;
+background-color: #ffff66;
+height: 50px;
+flex: 1;
+  border-radius:95px;
+}
+.footer-one,
+.footer-three {
+background-color: #5995DA;
+flex: initial;
+width: 100px;
+  border-radius:95px;
+}
+</s
+.nav {
+  border: 6px solid   yellow; /* For debugging */ 
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 65px;
+}
+.today {
+  border: 10px solid #ccff66;  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+.logo{
+  border: 10px solid yellow; /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  border-radius: 65px;
+  right: 2%;
+width: 5em;
+height: 38px;
+line-height: 18px;
+text-align: center;
+text-decoration: none;
+color: #66ff00;
+background-color: #6699ff;
+border: 3px ridge #ff66ff;
+border-radius:95px;
+  box-shadow: 25px 25px 10px 10px rgba(60,10,60,0.5);
+outline: 0 none;
+}
+.log a.active, .logo a:hover, .logo a:focus, .logo a:active
+{
+color: #73ad21;
+background-color: #ffff66;
+border-bottom-color: #73ad21;
+border-radius: 65px;
+}   
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px -7px 0 0;
+    display:inline-block;  
+    background-color: /* #E64A19; */ darkgreen;
+    }
+/* Styling the links */
+nav a {
+    display:block;
+    padding:0 10px;
+    color:   #FFF; 
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+/* Background color change on Hover */
+nav a:hover {
+   background-color: #000000; 
+}
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+/* First Tier Dropdown */
+nav ul ul li {
+    min-width:170px;
+    display:list-item;
+    position: relative;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
