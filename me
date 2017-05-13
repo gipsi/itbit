@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>30 Day Writing Challenge</title>
-<style type="text/css">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>gipsi.itbit.me</title>
+
+<style>
 body{
  
-  background: #666666;
+  background: #339966;
   color: #eeffff;
   font-family: Verdana, Geneva, Sans-serif;
   font-size: 120%;
-  font-weight: 300;
+  font-weight: 600;
   max-width: 500px;
   margin: auto;
-  border: 3px solid #73AD21;
+  border: 9px ridge #73AD21;
   padding: 30px 30px 30px 30px;
 }
  
-
-
 span {
   display: block;
   font-weight: 400;
@@ -60,1234 +60,398 @@ h4{
 h5{
   color: #ddffff; 
 } 
+ 
+
 /* tab control CSS: the tabs */
 .tabs
 {
-	position: relative;
-	bottom: -1px;
-	height: 20px;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+position: fixed;
+top: 1px;
+height: 20px;
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
 
 .tabs li
 {
-	display: inline;
-	float: left;
-	padding: 0;
-	margin: 0 0 0 10px;
+display: inline;
+float: left;
+padding: 0;
+margin: 0 0 0 10px;
 }
 
 .tabs a
 {
-	display: block;
-	width: 5em;
-	height: 18px;
-	line-height: 18px;
-	text-align: center;
-	text-decoration: none;
-	color: #555;
-	background-color: #ccc;
-	border: 1px solid #999;
-	outline: 0 none;
+display: block;
+width: 5em;
+height: 38px;
+line-height: 18px;
+text-align: center;
+text-decoration: none;
+color: #66ff00;
+background-color: #6699ff;
+border: 3px ridge #ff66ff;
+border-radius:95px;
+  box-shadow: 25px 25px 10px 10px rgba(60,10,60,0.5);
+outline: 0 none;
 }
 
 .tabs a.active, .tabs a:hover, .tabs a:focus, .tabs a:active
 {
-	color: #222;
-	background-color: #fff;
-	border-bottom-color: #fff;
+color: #73ad21;
+background-color: #ffff66;
+border-bottom-color: #73ad21;
 }   
+  .heart { 	
+position: fixed;
+content: "";
+right: 45%;
+top:70%;
+  box-shadow: 90px 90px 30px 30px rgba(60,10,60,0.5);
+z-index: 2;
+} 
+.heart:before, .heart:after {
+ position: absolute; 
+content: "";
+ left: 80px; 
+top: 90%;
+width: 80px; 
+height: 115px; 
+background: #3333ff;
+ -moz-border-radius: 50px 50px 0 0; 
+border-radius: 50px 50px 0 0; 
+-webkit-transform: rotate(-45deg);
+ -moz-transform: rotate(-45deg); 
+-ms-transform: rotate(-45deg); 
+-o-transform: rotate(-45deg);
+ transform: rotate(-45deg); 
+-webkit-transform-origin: 0 100%; 
+-moz-transform-origin: 0 100%; 
+-ms-transform-origin: 0 100%;
+ -o-transform-origin: 0 100%;
+ transform-origin: 0 100%; 
+
+} 
+.heart:after {
+ left: 0; -
+webkit-transform: rotate(45deg); 
+-moz-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ -o-transform: rotate(45deg);
+ transform: rotate(45deg); 
+-webkit-transform-origin: 100% 100%;
+ -moz-transform-origin: 100% 100%;
+ -ms-transform-origin: 100% 100%; 
+-o-transform-origin: 100% 100%;
+ transform-origin :100% 100%; 
+
+}
+
+
+.footer {
+  position: fixed;
+  top: 90%;
+display: flex;
+justify-content: space-between;
+   box-shadow: 10px 60px 60px 60px rgba(60,10,60,0.5);
+border: 10px ridge #73AD21;
+  border-radius:95px;
+z-index:1;
+}
+.footer-item {
+border: 10px ridge #73AD21;
+  border: 3px ridge #ff66ff;
+background-color: #ffff66;
+height: 50px;
+flex: 1;
+  border-radius:95px;
+}
+.footer-one,
+.footer-three {
+background-color: #5995DA;
+flex: initial;
+width: 100px;
+  border-radius:95px;
+}
+</s
+
+.nav {
+  border: 6px solid   yellow; /* For debugging */ 
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 65px;
+}
+.today {
+  border: 10px solid #ccff66;  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo{
+  border: 10px solid yellow; /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  border-radius: 65px;
+  right: 2%;
+width: 5em;
+height: 38px;
+line-height: 18px;
+text-align: center;
+text-decoration: none;
+color: #66ff00;
+background-color: #6699ff;
+border: 3px ridge #ff66ff;
+border-radius:95px;
+  box-shadow: 25px 25px 10px 10px rgba(60,10,60,0.5);
+outline: 0 none;
+}
+.log a.active, .logo a:hover, .logo a:focus, .logo a:active
+{
+color: #73ad21;
+background-color: #ffff66;
+border-bottom-color: #73ad21;
+border-radius: 65px;
+}   
+
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px -7px 0 0;
+    display:inline-block;  
+    background-color: /* #E64A19; */ darkgreen;
+    }
+
+/* Styling the links */
+nav a {
+    display:block;
+    padding:0 10px;
+    color:   #FFF; 
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+   background-color: #000000; 
+}
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* First Tier Dropdown */
+nav ul ul li {
+    min-width:170px;
+    display:list-item;
+    position: relative;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
 </style>
-<script>
-p { ... styles applied always ... }
-body.jsenabled p { ... styles applied when JS executes ... }
-</script>
 </head>
 <body>
+
 <!-- tabs (links) -->
 <ul class="tabs">
-	<li><a href="#tab1">Tab 1</a></li>
-	<li><a href="#tab2">Tab 2</a></li>
-	<li><a href="#tab3">Tab 3</a></li>
+<li><a href="#tab1">Tab 1  - Hello</a></li>
+<li><a href="#tab2">Tab 2 - May </a></li>
+<li><a href="#tab3">Tab 3 - April</a></li>
 </ul>
 
 <!-- tab content -->
 <div class="tabcontent">
+ <div id="hello"></div>
+ <div id="tab1">
+<h2>Tab 1 Content </h2>
+<p>This example uses <a href ="https://www.sitepoint.com/progressive-enhancement-1-html/">progressive enhancement techniques </a>to create a tabbed content box.</p>
 
-	<div id="tab1">
-		<h2>Tab 1 Content</h2>
-		<p>This example uses progressive enhancement techniques to create a tabbed content box.</p>
-	</div>
-	
-	<div id="tab2">
-		<h2>Tab 2 Content</h2>
-		<p>The control will work without CSS and JavaScript if necessary. Even a text-only browser such as Lynx will work.</p>
-	</div>
+<h1> Hello World!</h1>
 
-	<div id="tab3">
-		<h2>Tab 3 Content</h2>
-		<p>For the best experience, users should use IE6+, Firefox 2+, Opera 9+, Safari 3+ or Chrome 1+ and have JavaScript enabled.</p>
-	</div>
+<h1>gipsi.itbit.me</h1>
+    <div class= "today">
+          <nav>
+              <ul>                   
+                  <li><a href="#">Today</a>
+                       <ul>
+                            <li><a href="#code">Code</a></li>
+                            <li><a href="#nature">Nature</a></li>
+                        <!--    <li><a href="#bottom">Where</a></li> -->
+                        </ul>
+                    </ul>
+                </nav>
+            </div>
+           
+    </div>
+<div id="heart"></div>
+
+<h2>Web development - Design Systems</h2>
+
+<div class="heart"><div class= "logo"><a href="#hello">back to top</a></div>
 
 </div>
-<h1>30 Day Writing Challenge</h1>
 
-<h4>Hi, I'm Gipsi. This is an HTML and CSS page I am making for <a href="https://marcjenkins.co.uk/the-30-day-writing-challenge/">#30DWC by Marc Jenkins</a></h4>
-
-<p><time class="year" datetime="2017"><span>2017</span> </time><time class="month" datetime="2015-04"> <span>April</span> </time><time class="week" datetime="2017-W13"> </time><time datetime="2017-03-28"> - </time> <time datetime="2017-03-30"> - </time> <time datetime="2017-03-31"> - </time> <time datetime="2017-04-01"><a href="#Box1">01</a></time> <time datetime="2017-04-02"><a href="#Box2">02</a></time> <time class="week" datetime="2015-W14"> </time><time datetime="2017-04-03"><a href="#Box3">03</a></time> <time datetime="2017-04-04"><a href="#Box4">04</a></time> <time datetime="2017-04-05"><a href="#Box5">05</a></time> <time datetime="2017-04-06"><a href="#Box6">06</a></time> <time datetime="2017-04-07"><a href="#Box7">07</a></time> <time datetime="2017-04-08"><a href="#Box8">08</a></time> <time datetime="2017-04-09"><a href="#Box9">09</a></time> <time class="week" datetime="2015-W15"> </time><time datetime="2017-04-10"><a href="#Box10">10</a></time> <time datetime="2017-04-11"><a href="#Box11">11</a> </time> <time datetime="2017-04-12"><a href="#Box12">12</a> </time> <time datetime="2017-04-13"><a href="#Box13">13</a></time> <time datetime="2017-04-14"><a href="#Box14">14</a></time> <time datetime="2017-04-15"><a href="#Box15">15</a></time> <time datetime="2017-04-16"><a href="#Box16">16</a></time> <time class="week" datetime="2017-W16"> </time><time datetime="2017-04-17"><a href="#Box17">17</a></time> <time datetime="2017-04-18"><a href="#Box18">18</a></time> <time datetime="2017-04-19"><a href="#Box19">19</a></time> <time datetime="2017-04-20"><a href="#Box20">20</a></time> <time datetime="2017-04-21"><a href="#Box21">21</a></time> <time datetime="2017-04-22"><a href="#Box22">22</a></time> <time datetime="2017-04-23"><a href="#Box23">23</a></time> <time class="week" datetime="2017-W17"> </time><time datetime="2017-04-24"><a href="#Box24">24</a></time> <time datetime="2017-04-25"><a href="#Box25">25</a></time> <time datetime="2017-04-26"><a href="#Box26">26</a></time> <time datetime="2017-04-27"><a href="#Box27">27</a></time> <time datetime="2017-04-28"><a href="#Box28">28</a></time> <time datetime="2017-04-29"><a href="#Box29">29</a></time> <time datetime="2017-04-30"><a href="#Box30">30</a></time></p>
-
-<section id="Box30"> <h2>Day 30 DWC: 2017-04-30 Sunday</h2> </section> <h3>POSH</h3> <H5>Css tabs</h5>
+<div id="heart"></div> 
 
 <p>
-Thinking about where to go after the 30 Day writing challenge took me to 
-
-reading <a href="https://adaptivewebdesign.info/">Adaptive Web Design by 
-
-Aaron Gustavson</a>
+This is my landing page and where I write about my  coding journey   A page that is part of the process and a record of my progress. Welcome!
 </p>
+
 <p>
-He talks the difference between progressive enhancement and graceful 
+The <b> Today </b> dropdown menu takes you straight to what I've been working on today.  Daily update of my adventures learning to code and writing about nature.
 
-degradation and clarifies the importance of accessibility on all kinds of 
-
-devices. I find the analogy of an M&M's to highlight the layers of content 
-
-very useful.
+<p>
+The <b> April </b>tab area is what I wrote during a <a href="https://marcjenkins.co.uk/the-30-day-writing-challenge/"> 30 Day Writing Challenge. </a>  The place where I started  <a href="https://books.google.co.uk/books?id=2waPrhhS_M0C"> Letting go of the words </a> to discover my <a href="https://books.google.co.uk/books?id=ImwotFMaWc8C&printsec=frontcover&dq=wild+mind&hl=en&sa=X&ved=0ahUKEwjg3NOXn97TAhXCKMAKHRKYD7AQ6AEINDAC#v=onepage&q=wild%20mind&f=false">Wild Mind.</a>
 </p>
-<ul>
-<li>Peanut (html): kernel or nugget of content</li>
-<li>Chocolate(css): tasty attractive covering </li>
-<li>Shell sugar coating(JavaScript): unique entertaining interactions.</li>
-</ul>
+
+<h4>2017 - May</h4>
+<p><time class="year" datetime="2017"><span></span> </time><time class="month" datetime="2015-05"> <span></span> </time> <br><time class="week" datetime="2017-W18"> </time><time datetime="2017-05-01"><a href="#Box63"> 01 </a></time> <time datetime="2017-05-02"> <a href="#Box64"> 02 </a></time> <time datetime="2017-05-03"><a href="#Box65"> 03 </a></time> <time datetime="2017-05-04"><a href="#Box66"> 04 </a></time> <time datetime="2017-05-05"> <a href="#Box67"> 05</a></time> <time datetime="2017-05-06"><a href="#Box68"> 06</a></time> <time datetime="2017-05-07"> <a href="#Box69"> 07</a></time> <time class="week" datetime="2015-W19"> </time> <time datetime="2017-05-08"><a href="#Box70"> 08</a> </time> <time datetime="2017-05-09"> <a href="#Box71">09</a></time> <time datetime="2017-05-10"><a href="#Box72">10</a></time> <time datetime="2017-05-11"> <a href="#Box73">11</a> </time> <time datetime="2017-05-12"><a href="#Box74">12</a> </time> <time datetime="2017-05-13"> 13</time> <time datetime="2017-05-14"> 14 </time> <time class="week" datetime="2015-W20"> </time><time datetime="2017-05-15"> 15 </time> <time datetime="2017-05-16"> 16</time> <time datetime="2017-05-17"> 17</time> <time datetime="2017-05-18"> 18</time> <time datetime="2017-05-19"> 19 </time><time datetime="2017-05-20"> 20</time> <time datetime="2017-05-21"> 21</time>  <time class="week" datetime="2017-W21"> </time><time datetime="2017-05-22"> 22</time> <time datetime="2017-05-23"> 23</time> <time datetime="2017-05-24"> 24</time> <time datetime="2017-05-25"> 25</time> <time datetime="2017-05-26"> 26</time> <time datetime="2017-05-27"> 27</time> <time datetime="2017-05-28"> 28</time> <time class="week" datetime="2017-W22"> </time><time datetime="2017-05-29"> 29</time> <time datetime="2017-05-30"> 30</time> <time datetime="2017-05-31"> 31</time> <time datetime="2017-06-01"> - </time> <time datetime="2017-06-02"> - </time></p>
+<p>
+The idea of a semantic calendar box is from <a href="https://www.iandevlin.com/blog/2015/07/html5/building-a-semantic-calendar-in-html5">Ian Devlin</a>
+</p>
+
+<p>
+I have been learning to code with <a href="https://www.freecodecamp.com">FreeCodeCamp</a> for two years.  
+</p> 
+
+
+ <div id="code"></div>
+<section id="Box74"><h3>gipsi.itbit.me</h3><H5>2017-05-12 Friday</h5><h4>Bits of Code<h4> <h2>Committing to Git</h2> </section>
  
-<p>
-It encouraged me to think about how to continue with development of the site 
 
-and keep up a writing habit.
+
+<div id="tab2">
+<h2>Tab 2 Content - May</h2>
+<p>The control will work without CSS and JavaScript if necessary. Even a text-only browser such as Lynx will work.</p>
+
+
+<h1>May</h1>
+<h2> 216 web safe hex colours</h2>
+<h3>May to September</h3>
+
+
+<p>
+The blue heart is a symbol of biodiversity.
+
+
+<a href="http://www.bluecampaignhub.com/">The Biodiversity Blue Campaign</a> 
 </p>
 <p>
-Looking for some easy guidelines I found <a href="https://www.sitepoint.com/progressive-enhancement-1-html/">Progressive Enhancement Techniques</a> by  Craig Buckler at SitePoint.
-</P> 
-<p> 
-Three articles covering html, css and Javascript applied progressively.
-<br>
-Introducing some tabs seems like a good idea to navigate to different parts of the page.
-<br>
-I stuck to content and style for now with just one line of script.
-
-<p>
-I still have a lot to learn about POSH 'Plain Old Semantic Html' and 
-
-writing straight into a text editor as markup I have found useful practice over the 
-
-month.
-</P>
-<p>
-Using<a href="https://validator.w3.org"> Nu Html Checker </a> 
-
-before updating the page is a little win if I find I have written the code without 
-
-errors. 
+This section is where I keep up a writing practice focussing on biodiversity in nature.
 </p>
-
-<section id="Box29"> <h2>Day 29 DWC: 2017-04-29 Saturday</h2> </section> <h3>Hacks, Ai and Stuff.</h3> <H5>Sparkle with Joy</h5> 
-
-<a href="http://www.bbc.co.uk/programmes/p050kvnz">Is Inequality About to Get Unimaginably Worse?</a>
+<p><time class="year" datetime="2017"><span></span> </time><time class="month" datetime="2015-05"> <span></span> </time> <br><time class="week" datetime="2017-W18"> </time><time datetime="2017-05-01"><a href="#Box31"> 01 </a></time> <time datetime="2017-05-02"> <a href="#Box32"> 02 </a></time> <time datetime="2017-05-03"><a href="#Box33"> 03 </a></time> <time datetime="2017-05-04"><a href="#Box34"> 04 </a></time> <time datetime="2017-05-05"> <a href="#Box35"> 05</a></time> <time datetime="2017-05-06"><a href="#Box36"> 06</a></time> <time datetime="2017-05-07"><a href="#Box37"> 07</a> </time> <time class="week" datetime="2015-W19"> </time> <time datetime="2017-05-08"> <a href="#Box38"> 08</a></time> <time datetime="2017-05-09"> <a href="#Box39">09</a></time> <time datetime="2017-05-10"><a href="#Box40">10</a></time> <time datetime="2017-05-11"> <a href="#Box41">11</a></time> <time datetime="2017-05-12"> <a href="#Box42">12</a></time> <time datetime="2017-05-13"> 13</time> <time datetime="2017-05-14"> 14 </time> <time class="week" datetime="2015-W20"> </time><time datetime="2017-05-15"> 15 </time> <time datetime="2017-05-16"> 16</time> <time datetime="2017-05-17"> 17</time> <time datetime="2017-05-18"> 18</time> <time datetime="2017-05-19"> 19 </time><time datetime="2017-05-20"> 20</time> <time datetime="2017-05-21"> 21</time>  <time class="week" datetime="2017-W21"> </time><time datetime="2017-05-22"> 22</time> <time datetime="2017-05-23"> 23</time> <time datetime="2017-05-24"> 24</time> <time datetime="2017-05-25"> 25</time> <time datetime="2017-05-26"> 26</time> <time datetime="2017-05-27"> 27</time> <time datetime="2017-05-28"> 28</time> <time class="week" datetime="2017-W22"> </time><time datetime="2017-05-29"> 29</time> <time datetime="2017-05-30"> 30</time> <time datetime="2017-05-31"> 31</time> <time datetime="2017-06-01"> - </time> <time datetime="2017-06-02"> - </time></p>
 
 
-
-<br>
-Following this theme of where we may be going with technology.
-
-
-<p>
-<a href="https://www.ted.com/talks/kevin_kelly_on_how_technology_evolves#t-496608">Kevin Kelly: How technology evolves.</a>
-
-
-Evolution is organisms hacking life.
-Life is everywhere, diversity is ubiquitous and theres a drift towards complexity.
-If you take the long term trends.
-</p>
-<ul>
+<ol>
 <li>
-ubiquity
+<a href="#Box31"> May Day: content</a>
 </li>
 <li>
-diversity
-</li>
+<a href="#Box42">Magpies, great-tits, a wagtail and a cuckoo.</a>
+</ol>
+ <div id="nature"></div>
+<section id="Box42"> <h3>Some Birds</h3> </section> <h2>Magpies, great-tits, a wagtail and a cuckoo.</h2> <H5>2017-05-12 Friday</h5>
+ 
+
+
+<p>
+There were swirling miasma shapes of mist under the oaks dripping in the moonlight between showers.
+</p>
+<p>
+
+</p>
+</div>
+
+<div id="tab3">
+<h2>Tab 3 Content - April</h2>
+<p>For the best experience, users should use IE6+, Firefox 2+, Opera 9+, Safari 3+ or Chrome 1+ and have JavaScript enabled.</p>
+
+
+
+</div>
+<h1>Month/Date(April)</h1>
+<h3>Title (100DaysofCode)Challenge</h3>
+
+<h4> This is an HTML and CSS page with a calendar box for marking off the days </h4>
+
+<p><time class="year" datetime="2017"><span>2017</span> </time><time class="month" datetime="2015-04"> <span>April</span> </time><time class="week" datetime="2017-W13"> </time> <time datetime="2017-03-28"> -- </time> <time datetime="2017-03-30"> -- </time> <time datetime="2017-03-31"> -- </time> <time datetime="2017-04-01"><a href="#Box1">01</a></time> <time datetime="2017-04-02">02</time> <time class="week" datetime="2015-W14"> </time><time datetime="2017-04-03">03</time> <time datetime="2017-04-04">04</time> <time datetime="2017-04-05">05</time> <time datetime="2017-04-06"></time> <time datetime="2017-04-07">07</time> <time datetime="2017-04-08">08</time> <time datetime="2017-04-09">09</time> <time class="week" datetime="2015-W15"> </time><time datetime="2017-04-10"></time>10<time datetime="2017-04-11">11</time> <time datetime="2017-04-12">12</time> <time datetime="2017-04-13">13</time> <time datetime="2017-04-14">14</time> <time datetime="2017-04-15">15</time> <time datetime="2017-04-16">16</time> <time class="week" datetime="2017-W16"> </time><time datetime="2017-04-17">17</time> <time datetime="2017-04-18">18</time> <time datetime="2017-04-19">19</time> <time datetime="2017-04-20">20</time> <time datetime="2017-04-21">21</time> <time datetime="2017-04-22">22</time> <time datetime="2017-04-23">23</time> <time class="week" datetime="2017-W17"> </time><time datetime="2017-04-24">24</time> <time datetime="2017-04-25">25</time> <time datetime="2017-04-26">26</time> <time datetime="2017-04-27">27</time> <time datetime="2017-04-28">28</time> <time datetime="2017-04-29">29</time> <time datetime="2017-04-30">30</time></p>
+
+<p>
+<ol>
+
 <li>
-specialisation
+<a href="#Box1">April fools: Content</a>
 </li>
-<li>
-complexity
-</li>
-<li>
-socialisation
-</li>
-</ul>
-<p>
-What does technology want?
-</p>
+</ol>
+
+
+
+<section id="Box1"> <h2>Day - DWC: 2017-00-00 - day</h2> </section> <h3> Content</h3> <H5>heading</h5>
+
 
 <p>
-<a href="https://backchannel.com/the-myth-of-a-superhuman-ai-59282b686c62">The Myth of the Superhuman</a>
+As the document I'm working on gets longer and I introduce more bits of code I am gathering more files.
+I construct the first HTML and css in a single file copied from the previous days and make added content,  adjustments and enhancements on the phone while offline.  This is convenient as I can do it anywhere when the phone is charged. 
 </p>
-Towards the end of this writing challenge I've been thinking about my next challenge.
-
-Learn JavaScript.
 <p>
-<a href="https://www.youtube.com/watch?v=NPB34lDZj3E">The Post JavaScript Apocalypse - Douglas Crockford</a>
+Next I  do one of two things:
+<br>
+when the phone is connected to wifi I can update the page by copy and pasting the relevant bits straight into the document on the server.  
+<br><br>
+Transfer the file to a PC and open it in Notepad ++ 
+Copy and paste the live version into Notepad++
+Make another file which is a combination of the two which when ready can replace the original on the server.
 </p>
-The mention of stuff in this talk inspired me.  
-<p>
-<a href="https://konmari.com/">KonMari</a>
-<br>
-A "Sparkle with joy" spirit of Zen approach to decluttering. 
-</p>
-
-
-
-<section id="Box28"> <h2>Day 28 DWC: 2017-04-28 Friday</h2> </section> <h3>Informed Technology</h3> <H5>Chronology</h5> 
-
-<p>
-First decade: the 1960's
-<br>
-<br>
-A black and white TV  I watched a cycling race.  
-<br>
-A bicycle with stabilisers.   I rode it without them on a garden lawn.
-<br>
-<br>
-Two tin cans joined by string.  Listening to my sister in another room.
-<br>
-A  telephone,  three numbers carefully dialled to hear my granny's voice.
-<br>
-A transistor radio with an earplug.  I listened to pop music. Broadcast from a boat off the English coast.
-<br>
-My dads scooter had a windshield.  He would take me on the back and we'd go for a walk and talk about wildflowers and insects.
-<br>
-At school  a record player and a black and white TV.
-In class we listened and learned the patterns and danced to English country tunes. Heard the poetry of Dylan Thomas and watched a man walk on the moon.
-<br>
-Learned writing with wooden leaded pencils and a rubber, colourful wax crayons then a fountain pen with scented blue ink and blotting paper.
-And painting with round blocks of water paint on coloured sugar paper.
-</p>
+So today I've been thinking about version control and reading <a href="https://git-scm.com/book/en/v2"> Pro Git. </a>
+<blockquote>
+The basic Git workflow goes something like this:
 
 <ul>
-  <li>
-Plain white paper exercise books for drawing, 
-  </li>
-  <li>
-Lined white paper exercise books for writing. 
-  </li>
-  <li>
- Squared white paper for maths. 
-  </li>
-  <li>
-Another squared paper with smaller squares for graphs.
-</li>
-<li>
-  Five lined paper to write musical notes, tunes for a woodwind recorder. 
-</li>
-</ul>
-Lots of different kinds of paper.
-<br>
-Lots of books with pictures.
+<li>You modify files in your working directory.
 
-<p>
-Second decade: the 1970's
-<br>
-<br>
-A record player in a wooden box like a suitcase with  snap catches, a carrying handle and two coloured vinyl faux leather surface. A tall center post with a catch to balance several records, and an arm to hold them in place to be released automatically with mechanical precision timing.
-<br>
-Singles, 45's the most popular one of the week and the top ten were frequently discussed.  There were magazines that published the lyrics.
-<br>
-A black bicycle, no gears, curved handlebars, rattly mudgards and a basket on the front. a mode of transport to travel round the country lanes to learn crafting skills at village hall workshops.
-<br>
-LP's. Albums played for hours with coloured arty sleeves.  Inner protective sleeves.  If they slid out the things would crack.  Or on a sunny windowsill, go soft and buckle into wavy bumps. Scratchy interference on playback was the norm for favoured well worn discs.
-<br>
-At school a room full of typewriters.  Typing a commerce lesson commerce. Noisy and smelled of ribbon ink and typewriter oil.
-<br>
-A language lab. Cubicles surrounded by grey painted hardboard covered in holes.  Heavy plastic headphones speaking French.  A tape recorder that could be stopped and started and spoken to.
-<br>
-And a room full of sewing machines. A foot pedal to make neat roads of seams. Guiding cloth under shiny steel feet and sharp bobbing needle speed a blur.
-<br>
-A colour television. Three channels. Shared and  watched in the evening.  A  picture with a clown and repeating muzak broadcast during the day, for technicians and repairs.
-<br>
-Motorbikes and discos and live punk bands in the ballroom.  Electric guitars and smoke machines and glitterballs.
-<br>
-I rode an automatic moped. And passed a test to drive a car.
 
+<li>You stage the files, adding snapshots of them to your staging area.
 
-</p>
-<p>
-Third decade: the 1980's.
-<br>
-<br>
-Typewriters electric, audio typing. Dictation machines replayed voices to be typed.  How to type in boxes, forms counting the even spaces of type. Making dots and joining them. Spinning golf ball typewriter. Shuttling crazy faster than the fingers could go.  A lighter touch, or the letters would multiply 
-<br>
-Microprocessor awareness.
-<br>
-First punch cards, ticker tape with little square holes, reams of it. And printouts of green lined paper with holes down the sides.  The paper came out fast.  It could print out astrological predictions in no time. If you knew your star sign.
-<br>
-Programming lessons on an Apple Macintosh.  And an IBM Tandy RadioShack. There were strings and dollar signs and dots and brackets. Code.  Luminous green on a dark screen. Platform games and Pong in pubs.  Waves of asteroids to blast out of electronic sky on a table screen set in fake laminated wood.
-<br>
-Then lazers.  Beams of light reaching the moon. Accurately meauring the distance from an old castle that kept the ships log of Captain Cook.
-The faint spidery sepia handwriting fading tidily into yellowing leather bound pages.
-Speeding through space and back, tiny lights, brightly carving rainbow disc colours on metal foil.
-<br>
-Photocopiers. Micro chips. Microprocessors.  Word processors. Spreadsheets.  One or two PC's. Novelty at first.  The huge buildings quiet humming concrete and glass with efficient workers gliding knowingly.  Lighting streets at night.  Went dark. 
-<br>
-Small businesses sprang up
-<br>
-There was talk of catalitic converters.
-</p>
-<p>
-Fourth decade. The 1990's 
-<br>
-<br>
-Modems garbled messages down phonelines screeching whirring dial up.  
-<br>
-Ms dos then windows.
-<br>
-Mice.
-<br>
-
-Children played games with pixels channelled through cassette tapes.  
-<br>
-Teenagers recorded music on them.
-<br>
-The TV could be taped.  On BetaMax or VHS.
-<br>
- Magnetic tape. 
-<br>
- Films could be bought to watch at home or rented, there were shops and libraries of them.  And special offers at petrol stations.
-<br>
-Then CD's for music and DVD's for film. Bright rainbow discs that didn't mind a scratch or two, but sometimes skipped or didn't work at all.  Hard and shiny in plastic cases. 
-<br>
-Micro wave ovens and dimmer switches.  Electrical goods ... 
-<br>
-Pagers sending text.  
-</p>
-<p>
-Fifth decade: Y2k
-<br>
-<br>
-Anxiety that viruses would eat up all the data destroy machines.  Anti virus software and subscriptions.
-<br>
-PC publishing. And Photoshop.  Digital photography.
-<br>
-phishing
-<br>
-An old PC with a one gig hard drive. No USB. Double speed cd ROM.  Discs on magazines to try out software, shareware, freeware. Malware. Spyware. Tutorials. Games.
-<br>
-The hard drive went.
-<br>
-Lots of big thick paperback manuals.
-Fascinating screensavers to protect the chunky ray tube monitor.
-<br>
-Then flat screens. LCD or LED.  Digital TV with a set top box, no more analogue. And oh yes records now called vinyl. Or satellite.  Multi-multi channels.  Subscription or diy free view?  Satellite internet?
-Fiber optic cables.
-<br>
-A laptop
-<br>
-Corel draw essentials.  
-Digital painting and vector graphics.  Photo manipulation.  Pixel perfect. Electronic digital camera, rechargeable batteries.
-<br>
-Touchpad.
-<br>
-Sounds, mp3 files.  Mp3 players. Shuffle. Libraries piracy and play.
-<br>
-An interactive encyclopedia on a cd ROM.
-<br>
-A netbook and a dongle and another lost hard drive.
-<br>
-Role play games - anonymity, handles and forums and FAQ.  
-<br>
-Microwave towers.
-<br>
-It worked quire well for a while then broke.  Loud beeping noises and refused to start up.
-</p>
-<p>
-A peek into decade 6.  The 2010's.
-<br>
-<br>
-A smartphone with no manual.  A data plan. Tapping sliding icons.  A portable amusement arcade.
-<br>
-Words with friends and Facebook. Tsu and Tower of Saviours. Walking to portals with a battery booster. Sound recording, playback.  Photos, editing, cloud storage - instagram the selfie!
-<br>
-Maps and information, books. Speech to text
-Poor battery life and broken WiFi.
-<br>
-One plus one android.  
-Screen,  keyboard, sim, sound recorder, speakers camera.  
-<br>
-Flash.
-<br>
-Clock, calendar
-<br>
-TV, Music, University, Social.
-<br>
-Car charger.
-<br>
-Shared.
-<br>
-Listicles
-<br>
-Writing
-<br>
-Poems
-<br>
-Code
-<br>
-Post post modern 
-<br>
-steam punk 
-<br>
-fragments.  
-<br>
-Who are the consumers.  
-<br>
-What is the user story.  
-<br>
-Where is the product.
-</p>
-<p>
-On the way to my wifi connection the car radio tuned into Heart was played <a href="https://www.youtube.com/watch?v=XfR9iY5y94s"> Men at Work </a>
-
-<section id="Box27"> <h2>Day 27 DWC: 2017-04-26 Thursday</h2> </section> <h3>Civilisation</h3> <H5>Blue Plastic</h5>
-<p>
-Arctic blue, the sky is blowing from the north. white clouds spaced neatly have bubbling  tops like avalanche snow and completely smooth grey flat bases.  A shear layer like the surface of some polar icy water.  The clouds are snowballs floating on an ocean, a flock of them, a shoal, something, a kind of gathering or migration.  Floating across the sky.  Uniform or regimental in their similarity, patterned copies they look smaller in the distance, my sense of perspective telling me they're all the same size. Drifting south, wave after wave advancing.
-</p>
-<p>
-Ahead a wooded slope, or could I call it forested.  Multicoloured hues and shades of trees in Spring.  The rounded  mottled and variegated domes  of summer leaved trees sap surging through their twigs surround a  rectanglular block of dark pines.  A great eagle's broad dark shadow swoops and wheels turning in flight to glide down towards some watery expanse I know hidden amongst the hyperboreal wasteland.
-</p>
-<p>
-As the little tufts of dwarf gorse flowers darken and fade  bright lemony peaflower shapes are sprinkled amongst a swathe of broom shoots. Bare patches of white sandy soil have a papery crust that matches the drying bark on a pile of corded birch logs. Now after nearly a month without rain  roots have extracted all moisture, but made use of every drop, to flaunt foliage and to catch the sun.
-</p>
-<p>
-The tawny horses with the blonde highlights in their manes and the primitive splotchy markings on their legs are nibbling bramble shoots in a glade of fine woodland grass and rush, the delicate sward cushioned with thick moss is soft underfoot.  Crunchy litter drifted into heaps in shade startles them and dry snapping twigs.  They watch, ears pricked forward, curious,  alert,  amiable.
-</p>
-<p>
-Past where the wild boar rootle leaving peeled back turf. Through scrubby saplings and windblown rootstumps is an iron digging fork. Patches of paint and a bloom of rust on tines half speared into the ground, wooden handle snapped off, a label still intact on the shaft.   Dog and bull.  Humans words in an oval logo conjure images of animals.
-</p>
-<p>
-By the entance to the growing field of best pony hay was a little black bag, knotted, hanging limply on a blackthorn bush. 
-</p>
-<p>
-Up the straight and narrow path a little way in front of me, a bright blue plastic bag, like a piece of that arctic sky triangular and weighted in one hand of a gentleman with a tweed brown cap.
-
-Grey fleece, new navy jeans and trainers he was keeping the same pace. 
-</p>
-<p>
-Into the lane where cars pass by I turned to go the opposite way.  
-</p>
-<p>
-He called, "Missy".  
-</p>
-<p>
-"Can you tell me where I am? - Which way to go? - Where there's a place?" 
-</p>
-<p>
-Tanned with toothy gaps and round eyes pale.  Blue irises, black pupils restlessly searching, scanning the shrubby undergrowth and verdant hedgerows.
-</p>
-<p>
-I walked with him through the bluebell wood mauve perfume wafting in pockets through the twisting mossy hornbeam trees. 
-</p>
-<p>
-"When will we be out of this National lottery forest?"  
-</p>
-<p>
-Past some light brown curly furred cows with calves beside a nook of brakeny gorse. And hawthorn its creamy flowers just starting to show. The cows stood looking at us, backlit, the sinking sun flashing halos of their bovine shape. Starting to set in the west behind a Norman towered stone church nestled on a wooded brow.
-</p>
-<p>
-As we approached the village he spoke. 
-</p>
-<p>
-"What's that word? - That long word?"
-</p>
-<p>
-" Civilisation?" I suggest.
-</p>
-<p>
-"Yes, that's the one." He grinned and laughed.
-</p>
-<p>
-Emerging from a rough and bumpy track onto the street a smooth two-way road paved on either side with footpaths and kirbstones and short mown narrow strips of lawn. Straight ahead across the road, a construction site, dusty, great earth moving machines surrounded by tall metal barriers hung with colored notices. Placards. Boards. Crowded on a pole. Hoardings.
-</p>
-<p>
-"I know that" he said, stretching out his arm and pointing.
-</p>
-<p>
-He took out a blue metal can from his blue plastic bag, snapped off the ring pull and took a sip.  
-</p>
-<p>
-We shook hands and parted ways.
-</p>
-<section id="Box26"> <h2>Day 26 DWC: 2017-04-26 Wednesday</h2> </section> <h3>Mindfulness</h3> <H5>Bodyscan</h5> 
-
-<p>
-Sitting quietly upright on a sapphire blue cloth chair.
-</p>
-<p>
-Soft black headphones on my ears, their twisty matt black finely ridged double melded cable winds over my knee through the dancing sun light and leaf shadows, glinting gold where the jack plugs into the steel rimmed phone.
-</p>
-<p>
-Finding an mp3 file, black and orange like a bullseye target icon, I  open it with a headphone icon to reveal a  rectangular sound box with an arrow and a slider button.  Underneath are two words.  Bodyscan unknown.  I press play and close my eyes.  A calm and steady male voice speaks, stutters jankily.
-</p>
-<p>
-Looking at the screen two small bold pause pillars on the right jitter on and off.  Playing with the sunshine shadows.  I quickly touch the tiny pillars vibrating  breakbeat morse code with my thumb and a small black triangle appears pointing west.  
-</p>
-<p>
-I touch the triangle behind the shiny glass screen.  The voice is smooth and steady this time.  Closing my eyes I listen and breath in.  Imagining my body filled with air.  And out, and in again. The morning air is cool, it feels good.
-</p>
-<p>
-The voice guides my attention to my right big toe.  Wiggling it I feel the inside of my shoe.  And then the other toe, the left one.  Focussing on them now both big toes together.  Breathing a slow rhythm.  Feeling the air in my toes. Then the little toes back and forth, my attention.  
-</p>
-<p>
-Curious now I notice the toes in between the big and little toes seem to feel a bit less.  Together they act as one.  More of a group than individuals.  Little pads in contact with the ground neatly tucked together arched down nails.  I wonder if this is how it feels - a cats paw.  Or to extend that feeling even into one toe, as horses do finger bones stretched and fused together. That middle toe extending, hardening into one sturdy hoof.
-</p>
-<p>
-I didn't think about paws when I was focussed on my toes. that arose just now as I go back over it and write.  And I remember how the skeletons of animals are similar but different.  From diagrams in books.  In black and white.  This is the structure.  A skeletal system.
-</p>
-<p>
-I wasn't really feeling much of my bone structure, more the sensations on my skin or in the muscles as I journeyed around my body.  Steadily, not hurried.  Legs and back.  Shoulders, hands and arms. Neck, mouth eyes.  The breath still cool and rhythmic.  Moving eyebrows, forehead, scalp.  I stretch wriggle my ears, they're getting cramped now, a bit squashed under the headphones.
-</p>
-<p>
-The recorded voice suggests I slowly open my eyes let in light and take in the surroundings.  Not yet.  There's too much of it.  Too many possibilities.  I'll rush and start to do things.  The things will be compelling. There's loads of stuff needs doing. 
-</p>
-<p>
-So for now I keep the headphones on and write.  Focus on the black mirror keyboard and the white box text.  Bring out some words to describe it.  Go over what I did.  OK.  Enough.  (550 words, 2 minutes to read) My shoulders have started aching my feet are cold and the other stuff that needs doing calls as the sun is warm on my cheek.
-</p>
-
-
-
-
-
-
-<section id="Box25"> <h2>Day 25 DWC: 2017-04-25 Tuesday</h2> </section> <h3>Shrine</h3> <H5>On the Village Green</h5>
-
-<p>
-In the center of the village is a small  square building like a shrine.  
-Open sided four sandstone pillars made with curved blocks, 
-the soft mellow coloured stone has paler thick mortar in between, and is faintly criss-cross carved with
-indecipherable letters and signs.
-</p>
-<p>  
-The pillars support a red-baked tile roof. Half way up the roof slope becomes four cream painted 
-flat triangles with a symmetrical cross shaped ridge.  A kind of four sided turret. Then a plinth like 
-a curved vase, or concrete bollard.  A wrought iron weather vane with dark spirals points North against
-a cold blue sky. 
-</p>
-<section id="Box24"> <h2>Day 24 DWC: 2017-04-24 Monday</h2> </section> <h3>Internet of Plants</h3> <H5>The Common Mycelial Network</h5> 
-
-<p>
-There is an Internet of Plants, a fungal web called the Common Mycelial Network or CMN.  A communication  network of chemical and electrical signals.
-</p>
-<p>
-Mycorrhizal mycelium are the cobwebby component of fungi.  Spreading through soil their fine filaments and  tiny threads form matrix mats and complex networks.  Myriad entries into plant roots form connections and pathways.  This is the infrastructure.
-</p>
-<p>
-Within the mycelium many complex activities of fungi occur.  The transfer of nutrients from soil to plant along these fungal networks is known to be a crucial part of healthy a ecosystem.  Once established they become  'Network-enhanced bioactive zones'. More here on <a href="http://onlinelibrary.wiley.com/doi/10.1111/nph.13115/full">Interplant Signalling through Hyphal Networks</a> at the New Phytologist.
-</p>
-<p>
-This Common Mycelial Network is also a communication network.  Chemical and electrical signals sent along these fungal pathways alert plants to damage and attack by insects and other herbivores or plant damaging fungi.  The plants can then respond defensively by releasing chemicals that repel their attackers.
-</p>
-<p>
-A  symbiosis, hard to study is secretly concealed within the soil.  Delicate and intricate at  its microscopic scale, yet extensive and rapid to adapt and grow and change. Resilient in transformative ways to  fluctuations.
-</p>
-<p>
-It's important that we try to protect and understand our established healthy ecosystems.  Link them, find out what they need, learn to appreciate their beauty and functionality and how to value it.  
-</p>
-<p>
-Why is having a coherent and resilient ecological network important?  This report goes into some detail for findings in the UK.
-<a href="https://www.gov.uk/government/news/making-space-for-nature-a-review-of-englands-wildlife-sites-published-today">Making Space for Nature</a>
-</p>
-
-
-<section id="Box23"> <h2>Day 23 DWC: 2017-04-23 Sunday</h2> </section> <h3>Earth Day</h3> <H5>Homo Sapiens and Horses</h5> 
-
-<p>
-The day before yesterday I finished reading <a href="https://books.google.de/books/about/Sapiens.html?id=FmyBAwAAQBAJ">Sapiens: A brief History of Humankind by Yuval Noah Harari</a>.  A hardback book my dad lent me  it's got a nice white paper cover with an embossed black fingerprint on the front, tactile, like brail but with a smoothly contoured slightly rubbery plastic feel.. As Ive been doing this writing challenge I've been reading the book, usually a chapter a day.  The fingerprint  is a good motif for the theme of the marks we humans make that runs through the book.  A symbolic representation of the fluid contours of our history, a map as all good story books have, to imprint on the mind as a delineated guide.
-</p>
-<p>
-Deliberately  not hurrying is a habit I'm learning to appreciate.  The small chunks of <a href="https://books.google.de/books?id=iPDUDAAAQBAJ&printsec=frontcover&dq=daily+stoic&hl=en&sa=X&ved=0ahUKEwjH2_rF-7rTAhXpA8AKHcskAkcQ6AEIKzAB#v=onepage&q=daily%20stoic&f=false">Daily Stoic</a> have set the tone for this.  I'm changing a tendency to rush through books absorbing as much as possible quickly, cramming, skimming over the words to get the gist and a comprehensive overview. Writing myself is helping me appreciate more the arrangement of the words and structure, cadence - quality.
-</p>
-<p>
-So I purchased a new ebook to read with a £3 token and rewards from Google surveys.   <a href="https://books.google.de/books?id=9sZ1CwAAQBAJ&printsec=frontcover&dq=Horses,+horses&hl=en&sa=X&ved=0ahUKEwjXvMvh_LrTAhXEfFAKHY8fCMUQ6AEIIjAA#v=onepage&q=Horses%2C%20horses&f=falseHorses,"> Horses, Horses, in the End the Light Remains Pure.</a>  I've wanted to read it since about a year ago.  It's going to be hard and I need to be brave.  I don't want to feel sad.  What I remember is that it's about Fukushima which is a region of Japan famed for its horses, by a Japanese novelist who grew up there, moved away, then had to go back, after the tsunami disaster 3/11  to see for himself.
-</p>
-<p>
-Through the month of March 2011 I watched the newsreels sending footage, over and over, each installment another horrifying display of things that couldn't be.
-</p>
-<p>
-The tsunami from above and then the power plant, fixed cameras focused on boxes, cubes against  blue sky.  Waiting.  The news already happened.  That was then.  And I don't have a television set any more.
-</p>
-<p>
-Yesterday was Earth Day I liked the animated Google doodle that told me so and I tried the new <a href="https://earth.google.com/web/@0,0,-24018.82718741a,36750128.22569847d,35y,0h,0t,0r/data=CgAoAQ">Google Earth</a> app on my phone.  'Feeling Lucky' I let Google choose.  It zoomed me round the world to a city in Japan called Minamiaizu.  OK.  I stroked a finger around the screen, widened out to read the writing, Japanese and English.  Across and up the Eastern Pacific coast beside dark shadows in the sea - tectonic forces. To Soma, a place of horses.
-</p>
-<p>
-And Fukushima to my surprise is inland and a city.
-</p>
-<p>
-I visit Tokyo,  a grey brown intricacy in daylight from above.  Different to the brightly neon coloured street scenes I recollect, cartoons and cables with drifting saloon cars in Grand Theft Auto style Vice city  - with cherry blossom. 
-</p>
-<p>
-Then Hiroshima, which seems to be a forest.  A dark green bobbly textured blanket.  Japan does have a lot of trees. 
-</P>
-<p>
-I looked at some MOOC's offered by UTokyoX University, and signed up for one with EdX called <a href="https://education-and-growth.blogspot.co.uk/2017/03/sustainability-science-key-concept-for.html">Sustainability Science - A Key Concept for Future Design.</a> They also offer courses on radiation and quantum mechanics which look interesting and more on another platform which  I've not tried.  
-</P>
-<p>
-I then read a bit on Wikipedia about native Japanese ponies which led to an interesting UN Food and Agriculture Organisation report <a href="http://www.fao.org/docrep/010/a1250e/a1250e00.htm">The State of the World's Animal Genetic Resources for Food and Agriculture...</a>
-</p>
-<p>
-Earth Day was also the start of a three year campaign to increase environmental literacy by the <a href="http://www.earthday.org/2017/02/20/earth-day-network-launches-three-year-campaign-environmental-climate-literacy-earth-day-2017/">Earth Day Network (EDN) </a>
-</p>
-
-
-<section id="Box22"> <h2>Day 22 DWC: 2017-04-22 Saturday</h2> </section> <h3>White Mare</h3> <H5>... and a baby robin</h5> 
-<p>
-The flank of a white mare, dappled grey, the sky.  Vision of a newborn foal, that whiteness overhead.  Beneath a green dome stretching away of salad plant life to chew, so fresh in May.  Scent of mowed grass scythed by toothy blades and trodden lightly with the curved rim hooves. And warm milk, comforting and safe.  Mother kind, attentive, softly nuzzles, nudges,  pleased to show her little one the way.
-</p>
-<p>
-Lying flat on the grass chin cupped in hands I gaze. One soft brown eye looks at me shining through white lashes while she grazes.  Can I see the whorl that gathers to a spiral on her forehead.  A subtle flashing and pulsating optic swirl emerging - or am I blind.
-</p>
-<p>
-Or the colour of down at the base of a rock doves feather.  Soft light, gentle on the eyes. Thick floral aroma carries  euphoria in the cool air which glows green.  Not bioluminescence but sunlight, diffused refractionally, blended, not electrically, but pure.  Into the chlorophyll to glow back yellow green.  A delicate flux and an intricate activity of complexity.
-</p>
-<p>
-The sleeping bag on my knee is microfiber and machine stitched, its crinkled puffy folds and shadows are half grey, the colour of silver coins without the shine and that yellow green, the colour of young maple leaves.  Sitting by an open door, a net drawn back to feel the air and smell the trees my eyes are closed in mindful contemplation.
-</p>
-<p>
-A drumming flutter and a tiny brush of cool air wafts my hand.  Cautiously I part the lids of just one closed eye a tiny bit.  Sitting on my knee, facing the brightness of the world through the open door, wide eyes glistening, a fluffy baby robin.
-</p>
-
-<section id="Box21"> <h2>Day 21 DWC: 2017-04-21 Friday</h2> </section> <h3>New buds moon</h3> <H5>A willow month</h5> 
-
-<p>
-Everything is green. Overwhelmingly green.  This year is dry the April showers have been meagre so far.  An occasional sprinkling in the night which by morning leaves no trace but for an extra burst of growth and lushness. 
-</p>
-<p>
-Oak tree flowers adorn majestically spreading branches putting into shadow gnarly moss encrusted bark.  Each one's display glows a slightly different hue, some orange others yellow lime.  Twigs look black against the sky and the catkins rustle to slight wafts of breeze.  Baby birds earnestly practicing agility whilst cheeping loud simple notes are absorbed in climbing higher. Explorers of the air,  their feathers sprouting faster than the greens. 
-</p>
-<p>
- Little robins, tawny brown emergent from the dark evergreen dusty ivy tree.  Its  twisting clambering trunk hugging sprawl  and shag pile bark a place to start that spark of life as they chipped their way through warm  shell, compelled, to find the light.  To leave that smooth round moss lined nest so carefully crafted and kept clean.  The soft down and tender care, the excitement and energy of insect foods.
-</p>
-<p>
-Below a purple haze of violet blue contrasts with green.  Bluebells coyly curving from spear like buds  unfurling. In simultaneous release the coiled back petals send a scent so heady it overpowers the rankness of thick layers of leaf mould and moss and mushrooms.  The wood hyacinth of the Weald casts its enchanting spell amid the dapple of spreading oak flower, soft winglike leaves of hazel copse entwined with honeysuckle woodbine. 
-</p>
-<p>
- Sunken meandery lane banks topped with dense trimmed hedge of hornbeam, hawthorn and now and then wild cherries. Airy white petals for a moment showing off their difference bright amongst the myriad twigs then done so gently drifting. In these hollows in this new buds moon floral scents linger louder even than car exhaust fumes and warm tarmac.
-</p>
-<p>  
-Will and sally  in a garden, cats paws and goats beards, the ground is dotted with soft things, everywhere rabbit tail shapes littering.  A watery woodland cracked chaotic.  Not a tidy place.  Soft soil doesn't hold their roots well in gales so some have fallen gently, others snapped and broke.  But the branches, often when they hit the ground sprout feeding feelers almost instantly.  Sustained  by iron stained stream water they become crowded baskets.
-</p>
-
-<section id="Box20"> <h2>Day 20 DWC: 2017-04-20 Thursday</h2> </section> <h3>Sheep</h3>
-<h5>In a turnip field</h5> 
-
-<p>
-As the tree shadows lengthened and the suns rays mellowed into a golden evening light I leant on a galvanised gate overlooking a turnip field dotted with a flock of sheep.
-</p>
-<p>
-The sheep baa-ed intermittently calling out to one another, a motely mix, some with black faces. Others with white shaggy top notches and some with tiny lambs racing and bounding in play.
-</p>
-<p>
-Some were nibbling the dry turnips that had thick woody stems taller than the sheep themselves, others were browsing short grasses and bramble from around the field edges and woodland hedge.
-</p>
-<p>
-One or two nearby looked back at me quizzically.
-</p>
-<section id="Box19"> <h2>Day 19 DWC: 2017-04-19 Wednesday</h2> </section> <h3>Fallow </h3> 
-<h5>An uncultivated plot.</h5> 
-<p>
-The practice of leaving land to rest and regenerate.
-</p>
-<p>
-It seems that about a third of cultivated land was left fallow in carefully documented medieval times.   People in the UK divided land between themselves in furlong strips for growing food crops for themselves as well as for livestock.
-</p>
-<p>  
-A swift internet search reveals that uncultivated plots are unpopular amongst allotment holders and some of the regulations are quite intolerant of a lack of cultivation of plots which  is viewed as a problem. The  communal cultivation of urban allotments  has some parallels with earlier types of farming and land use but not in the area of intentionally leaving them fallow.
-</p>
-<section id="Box18"> <h2>Day 18 DWC: 2017-04-18 Tuesday</h2> </section> <h3>Horses on the heath</h3> <H5>Step back in time</h5> 
-<p>
-A descent from a sharp corner on a wooded lane into an open expanse of undulating fields with tree lined gullies.  The step back in time field is an ancient track. Buried beneath open grassland and a steady incline of about half a mile it echoes with the chattering of people engaged in showing off their old agricultural machinery.
-</p>
-<p>
-For several years an August weekend would be busy with bustle and diesel fumes as crowds stopped by to wander around curiously perusing all manner of strange implements and tools, watched as wattles were crafted, hop poles erected and a shire horse protected her new foal in a pen. Heavy horses and small clattering tractors ploughed and tilled small patches of soil, energetically demonstrating a variety of bygone country skills.
-</p>
-<p>
-Now the fields are quiet, the sheep who grazed over the winter have gone.  Skylark  song pierces the  breeze as if signalling it's found an unexpected area of downland in this densely wooded Weald.
-</p>
-<p>
-The track goes into the wood beside scrubby bushes and bramble.  Rough bricks and tiles, lumps of sandstone and old iron working smelt protrude like a mini mountain range down the centre, cemented into the dark dry mud.  
-</p>
-<p>
-The musical gurgling of a fast flowing stream with high sided mossy banks thick with clumps of golden saxifrage and the garlicky smell of ransome's, resonates as it passes through an old red brick arched culvert to join another stream.  The slightly clouded water glints with dancing sun rays sparkling through the gloom, gliding over blackened gravel, swirling fallen hazel lambs tails in pools dammed by broken sticks and leaves.
-</p>
-<p>
-The ancient track climbs, a curvy, double tyre tread pattern kept ley line straight, on course, a steady up, then down, then higher still to a beacon. Meanwhile the stream meanders downwards this way and that exposing  pale clay as it turns into some tall pines. Telegraph poles alive, who instead of wires wear dark green tufts of needles high up on their spindly branches, and are filled with the sweet high notes of tiny birds flitting around invisibly.
-</p>
-<p>
-Are the horses in the broom forest?  Where can they be.  They hide there sometimes and are hard to find.  A south facing hillside.  A few years back a larch plantation is now a heathland wood pasture. Heather, birch and broom, soft fine grasses diligently cropped.
-A tiny orange butterfly on a flower.  Buzzards shrieking, wheel and soar, arguing they flap and interact like kids who play on bikes.
-</p>
-<p>
-The horses are in the meadow, beyond the cart track puddle filled with tadpoles, below the orchard with the deer hide platform and the beehives. An old crab apple still bearing tiny red apples is just starting to blossom.
-</p>
-
-<section id="Box17">
-<h2>Day 17 DWC: 2017-04-17 Monday</h2>
-</section>
-<h3>6 words that can ruin a sentence</h3>
-<h5>... and I've used most of them so far in this challenge.</h5>
-
-
-<p>I'm thinking about writing more than getting things down.</p>
-<p>Then I saw this when I was looking up indifferent.  <a href="http://www.dictionary.com/slideshows/umwords#actually">Actually, literally, basically, honestly, like and obviously.</a>
-</p>
-
-
-<section id="Box16">
-<h2>Day 16 DWC: 2017-04-16 Sunday</h2>
-</section>
-<h3>CSS, GitHub and marking off the Days</h3>
-<H5>Incrementally keeping it minimal</h5>
-<p>Writing straight into the html document today or I would probably keep tinkering with the code and not do the writing.</p>
-<p>Tentatively added some styles this morning, and keeping them in the head of the document the whole thing is still just one file.  Mostly experimenting with body elements, changing the font style and weight,
-and adding some colour.  I got very distracted choosing colours, it's absorbing fun, so easy to do.  Still what I set out to do
-was change the width so the text is easier to read on a large screen.  Coding it on the phone makes it easy to forget the width as 
-automatically filling the screen looks fine on a narrow one.</p>
-
-<p>I didn't like the look of the the X in the calendar boxes and decided that as the boxes change colour anyway when I link them to the writing
-they don't need to be there.</p>
-<p>The calendar template itself is good though and and I'm happy with the way its turning out.</p> 
-<p>I'm thinking about making another one along similar lines for 100 and 301 days of code.  I spent quite a while sorting out the days
-for 100 days of code in the GitHub repo as I'd gone adrift with them somewhere in the 60's.  I thought I was nearly at day 100 indeed I tweeted day 95
-yesterday and I'm in fact on day 105.  10 days out! </p>
-<p>Seeing the page on a larger screen makes the fonts look too big, also I shall look into a different types. But for now I'll let it settle and have another look tomorrow.</p> 
-
-<section id="Box15">
-<h2>Day 15 DWC: 2017-04-15 Saturday</h2>
-</section>
-<h3>Let's talk about Nitrogen</h3>
-  <ul>
-    <li><b>What is it?</b>  It is a common chemical element in the universe. It is estimated at about seventh in total abundance in the Milky Way and the Solar System.  
-	                  The majority of earth's atmosphere (78%) is nitrogen.</li>
-	    
-    <li><b>Where is it?</b>  Being such a large part of the earths atmosphere nitrogen is literally everywhere. 
-	                  A building block of proteins and nucleic acids such as DNA, a crucially important component of all biological
-					  life. The <a href="https://en.wikipedia.org/wiki/Nitrogen_cycle#/media/File:Nitrogen_Cycle.svg">nitrogen cycle</a> is a complex biogeochemical 
-					  cycle in which nitrogen is converted from its inert atmospheric molecular form (N2) into a form that 
-					  is useful in biological processes. </li>
-					  
-    <li><b>Why we should know about it.</b> It is the most significant part of earth's ecosystems and collective human activities like industry and agriculture
-	                  are having a massive impact. Reactive nitrogen is building in great pools in air, soil and water throughtout the biosphere. 
-					  
-                                   	</li>
-    <li><b>What we can do.</b> <blockquote> "We need to talk about nitrogen deposition, to raise awareness of its causes and
-consequences, to agree on solutions, and to work together to integrate these solutions into policy and practice now .  <a href="http://www.plantlife.org.uk/application/files/1614/9086/5868/We_need_to_talk_Nitrogen_webpdf2.pdf">We need to talk about Nitrogen</a></blockquote>
- </li>
-  </ul>
-  <br><br>
-
-<section id="Box14">
-<h2>Day 14 DWC: 2017-04-14 Good Friday</h2>
-</section>
-<h3>Easter Bunnies and a Golden Egg</h3>
-
-
-<p>
-In a a virtual world of medieval fantasy  behind some shrubby trees beyond  the glistening white  castellations of royal perimeter walls two adventurers, one in a graceful green outfit, the other a cabbage cape,  came upon a large agouti rabbit. Lolloping around rather comically and obviously confident he'd be  too great a prize for a poachers pie a party zone had emerged and his smaller kindred, enjoying themselves darted  skittishly, leaping playful in the pixel light.  
-</p>
-<p>
-The large  comical old rabbit needed help with making eggs for Easter.   A rocky cavernous looking rabbit hole  was a portal and entering just a short arrival at an island surrounded by a still blue sea.  Hazy sunshine and white mist blurred  horizons.  This was a peaceful haven. 
-</p>
-<p>
-A conversation with another rabbit and a swinging descent by rope into a cave.
-</p>
-<p>
-The walls were smoothly sculpted with a clay like texture, crumbly but with beads of moisture here and there it appeared ideal for tunnelling.  Could this be one of those legendary mud dungeons of yore?
-</p>
-<p>
-A strange array of scents and warm aromas wafted by.  Intense, enticing, ehhanced and imbibed with complex strangeness and unmistakeably chocolate. A hint of fishyness, some spice, a zesty lemony and tropical banana. This certainly smelled like a chocolate cavern, though with dim lighting it was hard to be certain.  
-</p>
-<p>
-A golden rabbit hopped around looking somewhat overwhelmed.  He new where everything was and directed the bemused friends to larder shelves and crates. Egg moulds, a lovely old stempunk stove and plenty of colourful wrapping designs meant getting the job done went fairly smoothly.
-</p>
-<p>
-The flavour of the eggs was pretty weird, spicy and fish and salted.  Eventually after making each egg carefully then precariously climbing up and down the rope, though fashioned as requested and ready to ship the Easter Bunny rejected each and every one. The eggs would not do for the customers, the flavours would be unpopular so he rudely hurled the helpers half way across the kingdom into a distant sea.  
-</p>
-<p>
-This seemed suspiciously like a ploy.  Especially as the greedy rabbit had so voraciously eaten each egg  as it was presented to him.  Still they had not set out to be judgemental, just agreed to help with a task. Though one of the companions did for a moment wistfully recall a perfect golden egg, banana flavoured, that he'd been sure would be a hit.
-</p>
-<p>
-Heading back while somewhat disgruntled by this lack of appreciation for their careful attention to detail they still hoped some small reward might be given for all the effort. It was worth the trek.  The rabbit grudgingly awarded colourful easter egg shaped helmets.  Though not without a reminder that this was purely an act of generosity on his part as there had in fact been no prior contractual agreement to the arrangements so he was under no obligation whatsoever.
-</p>
-<section id="Box13">
-<h2>Day 13 DWC: 2017-04-13 Thursday</h2>
-</section>
-
-<h3>Process update</h3>
-
-<h5>MMORPG</H5>
-
-
-
-<p>Writing about and making an HTML and CSS page describing a trip to a holiday event in an massive multiplayer online roleplaying game.</p>
-<p>I wrote a quick draft today immediately after the event so tomorrows writing will be mostly editing and rearranging.</p>
-<p>Reading through a CSS tutorial phone app I saw how to fix a background image so I thought I'd try this as I want to keep up the momentum of learning CSS.</p>
-<p>A true down the rabbit hole experience reminded me of this song.  <a href="https://www.youtube.com/watch?v=Vl89g2SwMh4">Jefferson Airplane - White Rabbit,[HD] (Lyrics)</a> the video was recorded live at Woodstock on 17th August 1969 which I noticed was less than a month after 20th July 1969 when two men walked on the moon declaring
-<a href=https://www.nasa.gov/mission_pages/apollo/apollo11.html> "The Eagle has landed." and "We come in Peace."</a> </p>
-<section id="Box12">
-<h2>Day 12 DWC: 2017-04-12 Wednesday</h2>
-</section>
-
-<h3>Have you lost your dog?</h3>
-
-<h5>Road to nowhere</h5>
-
 
-<p>
-The lane gently dips away from the grassy junction.  The direction is due west so the sun, climbing higher now is to the left making half the lane concealed in the mottled shade of a neat shoulder high machine cut hedge of hazel and hawthorn. The other half is in full sun, reflecting and radiating warmth and vibrant colours with fresh spring greens emergent from the coppery russet litter of bracken and mouse coloured twiggery in verge and hedge.  
-<br><br>
-Amongst the greenery the creamy flutter of a butterfly with orange tip wings darts this way and that. Then the red and orange velveteen of a darker canvassed peacock insect gliding blinks.  Its large round eyes,  are pure azure with glints of eyeball white and rimmed seductively with kohl.  It leads the way settling purposefully on tarmac earth or leaf.  Outstretched wings double as finely decorated solar panels.
-<br><br>
-Sloping contoured upwards south west and in the dappled shade of widely spreading hedge trees a lush pasture.  Three horses, two brown and shiny cropping sward, one muddy oatmeal leans his tail against a chestnut post and rail. Sitting on the fence he maintains a steady swinging motion back and forth, his eyes half closed it seems  he inwardly  recites a mantra. And two brown cows one gently grazes the other sits legs tucked under resting in the lee of a hedge but with  head up quietly 
-watchful.
-<br><br>
-An elderly couple with walking sticks are heading eastwards with a skinny grizzled black dog.  As we pass he smiles, his eyes are dim and his collar and leash loose as his body curves and sways a snakey motion that wriggles his tail.  Cheerfully and in mildly curious way we exchange greetings and  good'ays, then with a quizzical look the old man asks me. "Have you lost your dog?"
-
+<li>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+<ul>
+</blockquote>
 </p>
-
-<p>With a little inspiration from this David Byrne song.<a href="https://www.youtube.com/watch?v=8SSPnRK2Ads">... Road to Nowhere</a></p>
-
-<p>Document details:<br />
-<br />
-418 words, 2421 characters.<br />
-<br />
-Estimated reading time: 1 minutes, 40seconds.<br />
-<br />
-File path: storage/emulated/0/writer/lostDog.txt<br />
-<br />
-Last modified:<br />
-12 Apr 2017 16:32:01<br />
-<br />
-Estimated writing time:<br />
-1 hour.<br />
-<br />
-Markup time:<br />
-1 hour<br />
-<br />
-Stage:<br />
-<br />
-More from yesterdays mindful walk.</p>
-<br><br>
-<section id="Box11">
-<h2>Day 11 DWC: 2017-04-11 Tuesday</h2>
-</section>
-
-<h3>Mindful Walking</h3>
-
-<h5>New England Lane in Spring</h5>
-
-<p>Morning sunshine has brought hundreds of tiny spiders out, they run across the tufty grass in all directions as the dew dries across a flood meadow of the brooks. Next to an old pollarded white willow at a confluence of streams beside a footbridge and in the middle of the footpath are the charcoal remains of a bonfire with the cut off base of a slightly melted traffic cone in the centre. Charred sticks, discarded into the stream jostle and bob between the banks under the bridge. Blackthorn petals drifting from a dense thicket strew the path, settling softly on the grey ashes and floating on the water. Fluttering and stuck they outline the shape of an orb web.</p>
-
-<p>Across another footbridge under the arch of an ancient ivy clad sallow branch resting its top in a sunny field, white and delicate stitchwort flowers mingle with grass tussocks, there&#39;s a maroon leaved patch of pink dead nettles next to purple sprouting ground ivy and bold bright sunshine discs of many petalled dandelions lie flat against the smooth well walked baked mud. There&#39;s a dandelion clock standing tall totally transformed, pristine, inviting someone to pick it and blow its parachute seeds spinning into the sky. The sky is half blue half diffused gossamer white clouds which swirly smeared don&#39;t seem to know which way to go. Flaming gorse and tree tracery decked with tiny fresh leaves make patterns of exquisite intricacy. Birdsong everywhere. A kestrel hovering over his favourite spot just for the fun of it, or maybe practice.</p>
-
-<p>Up a steep hill the tarmac lane is busy with cars. Its steep banks are crowded with primroses, celandines, violets and anemones. Near the top a wild orchid, many flowered, magenta bright, with a pointy top and dusky spots on its broad leaves. Then all these little bees, there are no plants on this part of bank, the soil is dry, dusty grey and crumbly. Its steep, almost cliff like in a miniature way and the little bees are buzzing around busily in its warm sheltered sun pocket. They are black and shiny with tiny grey tufts at the base of their legs. Round a corner the lane plunges into the deep shade of a clump of pine trees on a tump, their trunks concealed by deep green shaggy yews. Overhead noisy rooks caw and cackle croakily to each other, jackdaws occasionally interjecting with some more lively opinions.</p>
-
-<p>Eventually I get there. A black topped white wooden sign post in a triangle of lush grass. Three ways, each wooden sign points directions with neat black letters and distance to villages in miles. New England Lane has no distance marked. It starts here.</p>
-
-<p>Document details:<br />
-<br />
-418 words, 2421 characters.<br />
-<br />
-Estimated reading time: 1 minutes, 40seconds.<br />
-<br />
-File path: storage/emulated/0/writer/mindful-walking.txt<br />
-<br />
-Last modified:<br />
-10 Apr 2017 17:34:01<br />
-<br />
-Estimated writing time:<br />
-1 hour.<br />
-<br />
-Markup time:<br />
-1 hour<br />
-<br />
-Stage:<br />
-<br />
-Recollections of a mindful morning walk.</p>
-
-<section id="Box10">
-<h2>Day 10 DWC: 2017-04-10 Monday</h2>
-</section>
-
-<h3>Reconnecting with nature</h3>
-
-
-
-<h5>Sentience, Old Brain, New Brain</h5>
-
-<p>Hidden beneath a screen of dialogue the old brain lurks defensively. It is our very own nature and the place we need to connect with. It is sensory and non-verbal, attracted or repelled. It knows best what we need , sending signals of hunger,thirst, heat, cold pleasure, pain, body function and emotion. To trust and to cherish the essence of life force, is vital.<br />
-The new brain learns to speak and read, tell stories solve puzzles. It is curious and likes to learn. Sensory input is labelled and categorised, explained intelligently. Considered and shared.</p>
-
-<h3>Wrangler</h3>
-
-<h5>Horseman and stock keeper</h5>
-
-<p>Herded, coaxed, coerced, persuaded, prodded, bribed. Managed, taught a lesson, punished. Believe in stories. True Stories. Facts. Reading to some purpose. A recipe - for disaster? An algorithm, a DIY manual. How to do this, that or the other thing. Read a leaflet, search the library. Google it, Wikipedia knows everything. No actually there&#39;s more to know. Code.<br />
-The stock market, stock photos, stock keeper, take stock, stock pot. Stockman wrangling. Our language is suffused with concepts of conquest and domination.</p>
-
-<h3>Insight</h3>
-
-<h5>Different kinds of mindfulness</h5>
-
-<p>Mindfulness can help connect with nature but as with anything the new brain gets hold of it depends on the stories it tells itself. Making strong connections with the old brain, the source of sensory wisdom, restores full awareness of being part of nature. Meanwhile the cultured new brain disconnects, resists, objects. Follows instructions.<br />
-<br />
-Vision can make it blind. Thinking and searching for stories or engaging explanations. Plots and schemes and plans, twist and spin. Maintaining inner voice, imagine conversations and procedures.<br />
-New brain works out. Predicts activities and outcomes. Mental habits, thoughts, imaginings play like film across a screen of consciousness.<br />
-<br />
-Mindfulness needs to be in nature, a relaxation into trusting that we are part of it.<br />
-<br />
-Reconnecting with nature is to recognise it.</p>
-
-<p><br />
-<a href="https://www.youtube.com/watch?v=juEqplbnh3Q">... Say it in Broken English</a></p>
-
-
-
-<p>Document details:<br />
-<br />
-285 words, 1806 characters.<br />
-<br />
-Estimated reading time:<br />
-1 minute, 8 seconds.<br />
-file path:<br />
-storage/emulated/0/writer/100365.txt<br />
-Last modified:<br />
-10 Apr 2017 08:16:01<br />
-Estimated writing time:<br />
-1 hour.<br />
-Markup time 3 hours (internet kept going down)<br />
-Stage:<br />
-Outline of reflective thoughts being organised into a verbally coherent form.</p>
-
-
-
-<section id="Box9">
-<h2>Day 9 DWC: 2017-04-09 Sunday</h2>
-</section>
-
-<h3>Three things I like about being in Nature.</h3>
-
-<h5>Fresh Air</h5>
-
-<p>Natural air filling the lungs educating the sense of smell and taste, awakening and oxygenating tiny blood vessels webbing skin. Each perambulation of flexing and stretching tendons over uneven but soft mulching leaves and hummocky grass Breathing a salty iodine infused sea breeze or a woodland&#39;s blended scents of lichen, moss and rotting bark suffuses the senses with a library of outdoor recognmition. Can be disturbing to approach busy roads or animal farms as the contrast becomes much more apparent.</p>
-
-<h5>The sky and clouds</h5>
-
-<p>Sunsets and cumulonimbus. The green flash that comes at the sun&#39;s point of descent into the horizon is something I&#39;d like to see. An unpredictable event but one that could be a phenomenal surprise. I once looked directly upwards when I noticed some really high clouds showing irridescence and was intrigued to see un upside down rainbow. It turned out to be a circumvenical arc.</p>
-
-<h5>Soil</h5>
-
-<p>The stuff that all the plants grow in. A dynamic recycling system filled with nutrients and decay.<br />
-Some of the words from miriam-webster.com/thesaurus highlight a problematic association with pollution indeed, generally negative words. Scum, sewage, sewerage, slime, sludge, swill; dross, dust [British], garbage, junk, litter, refuse, rubbish, scrap, trash, waste; soot; dinginess, dirtiness, dustiness, filthiness, foulness, griminess, grubbiness, nastiness, squalidness, uncleanliness, uncleanness.<br />
-A bit about the origin from thesaurus.com indicates the problem goes back a long way. soil early 13c., &quot;to defile or pollute with sin,&quot; from O.Fr. souillier &quot;to foul or make dirty,&quot; originally &quot;to wallow,&quot; from souil &quot;tub, wild boar&#39;s wallow, pigsty,&quot; either from L. solium &quot;tub for bathing, seat,&quot; or from L. suculus &quot;little pig,&quot; from sus &quot;pig.&quot; Meaning &quot;to make dirty, begrime&quot; is attested from c.1300. This is the sense of the noun in archaic night-soil.</p>
-
-<section id="Box8">
-<h2>Day 8 DWC: 2017-04-08 Saturday</h2>
-</section>
-
-<h3>Terminology, acronyms and jargon.</h3>
-
-<p>One of the things I found fairly quickly when I started learning to code was the amount of unfamiliar language being used to explain the process. Each new step brings with it new words to describe what it is going on.</p>
-
-<h5>Syntax and semantics.</h5>
-
-<p>The difference between syntax and semantics came up quite early on and has reinforced itself in my mind as being an important distinction to be aware of. Structure and meaning is another way to put it.<br />
-<br />
-There is: How to do things. What with?<br />
-<br />
-There are: Reasons to do things. Why?<br />
-<br />
-Coding for me is a shuttling between these two pillars. A polarisation that becomes blended with time and activity. The yin and yang symbol is an iconic representation of this simple process. As one element swirls and blends with the other so the seed of its opposite is born in itself. Starting with the simplicity of binary, complexity emerges. Syntax can be reassuringly unambiguous, semantics more elusive. You can make a box with syntax then use semantics to explore the meaning of being inside or outside of the box. Or you can pack all your meaning in a box to take with you on a journey. Learning to code is like putting what you need in a box and having something useful to unpack when you get there. What book would you take to read on a desert island?</p>
-
-<h5>HTML</h5>
-
-<p>Hyper Text Mark-up Language.<br />
-How to name a document that computers recognise through a browser on the internet.<br />
-<br />
-.html</p>
-
-<h5>Understanding</h5>
-
-<p>To get it, is to grasp the meaning. To get the message. To communicate is to convey meaning. An adventure or a quest? Adventuring is a stepping out, questing is to seek for answers. There is writing, and there&#39;s reading. Two sides of a coin. Heads or tails? Breath out breath in. Meaning written into the code goes into the computer to be transported, converted, translated, stored. Accessed, read, acted upon relayed, delayed. Lost.</p>
-
-<h5>Recursive acronym</h5>
-
-<p>Comes back to haunt you devoid of meaning. A wildebeest of the mind. Awe strikes as only signs of human ingenuity catching the senses do. Syntactic structure can be like Stonehenge unmistakeable and bold yet utterly unfathomable in its mysterious landscape and yet, its meaning knows no bounds. Semantic. Those pillars and lintels, open portals to the air and sky of sunrise and moonset. A framework for understanding the nature of all time. Set in stone. Carefully chosen stone at that. Bluestone and Sarsen on a bed of whitest chalk.</p>
-
-<h5>Song for Saturday</h5>
-
-<p>Feeling like I&#39;ve been sitting still too long I put on some headphones and find some rocking beats in my Google play library to loosen up. I choose Leaving Home for the association the words make with getting out of my comfort zone and thinking in and outside of boxes, a recurring theme. The song is from on the Exit Planet Dust album by the Chemical Brothers so the next song is In dust we trust then Playground For A Wedgeless Firm followed by A Song for The Siren (live). The tracks are all jumbled up so liking the rhythmic contrasting beats I start again and listen to the whole album straight through in the right order. .<br />
-<br />
-The last song with its combination of clipped harsh electronica, sawing synths, brushed and crashing cymbals and velvety bass line complimented with bubbling arcady and faintly Berber bazaar rhythms, spacey echoes and sweetly sung harmonically layered vocal tones of lyrical astuteness meandering over a rather laboured repetitivenes particularly resonates so I listen to it a couple of times.<br />
-<a href="https://www.youtube.com/watch?v=CZIXItHqTLI">- Alive Alone, The Chemical Brothers.</a><br />
-If that link doesn&#39;t work it can be found at the bottom of<a href="http://www.thechemicalbrothers.com/history"> The Chemical Brothers History </a> a nice scrolling parralax page through their back catalogue.</p>
-
-<p>Document statistics: 628 words, 3704 characters.<br />
-<br />
-Estimated reading time: 2 minutes, 30 seconds.<br />
-<br />
-File path: storage/emulated/0/writer/2017-04-08<br />
-<br />
-Last modified: 8 Apr 2017 06:27:23<br />
-<br />
-Estimated writing time: 1 hour 30 minutes<br />
-<br />
-Markup time: 1 hour 30 minutes<br />
-<br />
-Stage: Pondered a bit and adjusted from time to time whilst writing.</p>
-
-
-
-<section id="Box7">
-<h2>Day 7 DWC: 2017-04-07 Friday</h2>
-</section>
-
-
-
-<h3>Yesterday, today and tomorrow.</h3>
-
-<p>Yesterday I tried to. sort out the calendar box for this months writing. I&#39;m still enthusiastic about the idea of making my own streak box and think it is doable at this stage in my adventures with code. Unfortunately I made a proper cats cradle of the whole thing yesterday and although finally managed to get the all important red x&#39;s inside the daily flexboxes, rearranging the boxes into a sensible grid involved much failed trial and error.</p>
-
-<p>At least I had written a decent size block of text to add so I copied that into an HTML document I&#39;d made the day before.</p>
-
-<p>The CSS calendar was made in a fresh document separately to be clear about what was going on. So I pasted that into the head of the HTML. This seemed to look decipherable to a non-coder but, or perhaps it would be better to say, UI not that smooth and UX not great - I imagine? (Thinking about the U part but that&#39;s another story) - There was much more I would have preferred to achieve with it and so it just looked unfinished, work in progress. With the limited time available I thought I&#39;d enhance this appearance a touch by adding dashed borders.</p>
-
-<p>Looked forward to seeing the how it rendered on a desktop PC, uploading to the web and running it through the w3c validator to check for errors. There were quite a few, which was interesting. An invisible character in the doctype declaration for one, and some stray tags, but more usefully it made plainer to me my inexperience with things in the head of the document.</p>
-
-<p>Made corrections from the list of errors highlighted by w3c in C-Panel editor. This went quite smoothly and it was helpful to see where I&#39;d been going wrong. But apart from the numbered line and column location making it quickly navigable, the error messages themselves and the explanitroy pages I looked to for reference were a bit over my head.</p>
-
-<p>Was quite pleased when the document finally showed no errors. So when I had a look on my phone after I&#39;d left the PC I was dismayed to find the calendar boxes all over the place again.</p>
-
-<p>So today I&#39;m going to:<br />
-<br />
-* Start again with just an HTML document.<br />
-<br />
-* Find out a bit more about stuff that goes in the head of the HTML document.<br />
-<br />
-* Understand better the difference between markup and markdown and when it&#39;s appropriate to use them.<br />
-<br />
-* Skim through a C-Panel tutorial app I downloaded on the phone.<br />
-<br />
-* Make the reader/text panel narrower on desktop for easier reading.<br />
-<br />
-* Have another go at making the CSS calendar grid.<br />
-<br />
-Tomorrow is another day, I&#39;ll see how this one goes first. Ok just realised its Friday! Writing this means I&#39;ve completed a whole week, yay! So tomorrow is another week too. I&#39;ve enjoyed writing so far, I try to bring along a playful attitude having fun with the process and prepared for some tragic humour now and then. The writing part has proved easier than preparing the document which I thought I had ready. Nothing like giving things a try for showing up strengths and weaknesses - so cheerfully looking forward to the next leg of the challenge.</p>
-
-<p>Document details<br />
-<br />
-Document statistics: 512 words, 2906 characters.<br />
-<br />
-Estimated reading time: 2 minutes, 2 seconds.<br />
-<br />
-File path: storage/emulated/0/writer/yesterday-today-and-tomorrow.txt<br />
-<br />
-Last modified: 7 Apr 2017 08:24:17<br />
-<br />
-Estimated writing time: 1 hour.<br />
-<br />
-Markup time: 1.5 hours<br />
-<br />
-Stage: I went over this for about half an hour after writing correcting errors and adding to and changing the wording of some of the sentences.</p>
-
-<p></p>
-
-<section id="Box6">
-<h2>Day 6 DWC: 2017-04-06 Thursday</h2>
-</section>
-
-
-
-<h3>Meditation, stoicism and insight</h3>
-
-<blockquote>&quot;There are two things that must be rooted out in human beings&mdash;arrogant opinion and mistrust. Arrogant opinion expects that there is nothing further needed, and mistrust assumes that under the torrent of circumstance there can be no happiness.&rdquo; &mdash;EPICTETUS, DISCOURSES</blockquote>
-
-<blockquote>&quot;Remember, if there is one core teaching at the heart of this philosophy, it&rsquo;s that we&rsquo;re not as smart and as wise as we&rsquo;d like to think we are.&quot; - April 7th The Daily Stoic, by Ryan Halliday</blockquote>
-
-<p>After meditating for an hour on waking I read a page of The Daily Stoic (on editing I notice it was the wrong day) and now I&#39;m going to write about it. As I seek to make a habit of the practice of writing this seems like a good sequence. Last year I did a MOOC on Mindfulness made by Future Learn and Monash University in Australia. I made a deliberate effort to communicate on the forums, engaging with other learners to share the experience. Although it took quite some time to do this on top of following the video lectures and delving into the various readings offered, to read about others thoughts along the way and to share some of my own was valuable. Meditating is not always easy and pleasant and it can be reassuring to find the same applies to others. To being with I certainly found it a challenge.<br />
-<br />
-Once I found I could actually sit still for five minutes to a guided body scan my mind and thoughts started to argue and object to the guide. Particularly training myself like a puppy on a mat. I could understand the rationale behind it, a gentle approach to discipline but was bothered by a rather minimalist and stereotyped advertising image. All very pure and clean. My experience with dogs is somewhat less sterile, muddy paws jumping up, shaking wet fur over furniture and rolling in smelly things. Staying on track with the discipline though, I have in the past succeeded with dog training. Border collie sheepdogs are easy, they pay attention and learn quickly. When I thought about a puppy to train for the mindfulness exercise it was a labrador, perhaps as these are more steady in their temperament, but in hindsight I don&#39;t know why I didn&#39;t pick a collie which is where my experience lies.<br />
-<br />
-Collies are sharp and respond instantly once they&#39;ve got the what you&#39;re asking of them. But establishing obedience in the first place was the thing I was objecting to, and I think this is the main purpose of the exercise. This is about establishing trust. And the only thing I&#39;m being asked to trust is myself. To ask the puppy to sit quietly on a mat is to convince him that this is an appropriate way to conduct himself. To learn manners and patience will be a good thing for his future prospects. I&#39;d be asking him to trust me.<br />
-<br />
-I eventually stopped arguing and gave it a try and sitting quietly focusing on the breath is all there is to it really.<br />
-<br />
-The benefits came through with the process of letting thoughts come and go, arise and fade. Acknowledging without getting too hooked up. Recognising my own internal dialogue and being OK with it.<br />
-<br />
-I managed to establish a five minute mindful practice every day and kept it up for a couple of months then let it slip. Before I realised a month had gone by without any meditations. This was all the more apparent because I had started using Insight Timer, an app on my phone, to time and log my sessions. For the month of December there weren&#39;t any.<br />
-<br />
-January brought with it a fresh resolve and I joined 365 days of meditation group on Insight Timer. This time I listened to guided meditations, whilst keeping up my own five minute daily practice. I promised myself just five minutes a day EVERY day for a year and Insight Timer provided the opportunity to share this journey with other people as well as keeping a record and a log if I felt like it. I find checking back on my progress now and again is encouraging and motivating.<br />
-<br />
-At the same time, the beginning of January I started reading the Daily Stoic. Very compatible with this daily practice theme. The ebook is set out with a page to read each day with simple yet profound philosophical observations. Daily quotations from Seneca, Marcus Aurelius and Epictetus with short commentaries on how these ideas may relate to us right now are great little primers for navigating daily life whilst considering the human condition and its and effect on the world.<br />
-<br />
-Today&#39;s Stoic reading is a perfect reminder of what&#39;s needed to achieve the balance required for creative endeavour. Trust and humility can be found by doing, getting things right and getting things wrong. Combined with meditation the stoic way is helping me to access the insight necessary to create, a sweet spot between trust and humility.<br />
-<br />
-just ... keep calm and carry on.<br />
-<br />
-Document statistics: 863 words, 4981 characters.<br />
-<br />
-Estimated reading time: 3 minutes, 27 seconds.<br />
-<br />
-File path: storage/emulated/0/writer/meditation-stoicism-and-insight.txt<br />
-<br />
-Last modified: 6 Apr 2017 15:41:37<br />
-<br />
-Estimated writing time: 1 hour<br />
-<br />
-Markup time: 2 hours<br />
-<br />
-Stage: This writing is lightly edited. Some of the wording adjusted and rearranged.</p>
-
-
-
-<section id="Box5">
-<h2>Day 5 DWC: 2017-04-05 Wednesday</h2>
-</section>
-
-
-
-<h3>Writing today took second place to coding.</h3>
-
-<p>I got absorbed in adjusting the page I&#39;m making for the project.<br />
-<br />
-I wanted to sort out the calender I tried to make at the top of the page with flexbix and it wasn&#39;t happening. I thought I&#39;d have a go with grid as this sounds like it might be suitable for the task but a couple of hours reading through articles I&#39;d saved in pocket and trying out some examples I saw on codepen resulted in confirming that the browsers I&#39;m trying it out I don&#39;t support it yet.<br />
-<br />
-So I decided to have another go with flexbox. I started a new file with some boxes I made a little while levago<br />
-<br />
-Putting them in one flex container and trying out different selectors. Sometimes the process feels slow but it is absorbing and when I&#39;m making things like this and tweaking ng how things work eventually it sinks in. For learning I find css much easier than the programming languages &#39;proper&#39; although it still works, if the syntax is wrong I shows up visually with things going crazy jumbled up. This is a good pointer to the exacting nature of code. One mistake I made which causedcthe boxes to go all over the place was a curly brace facing the wrong way..<br />
-<br />
-Sometimes mistakes lead to interesting consewueces<br />
-<br />
-And in this respect is quite fun. Trying to do something I want on the other hand still takes a painfully long time, especially offline. Although I have lots of resources on the phone, from nding them, particularly if they&#39;re PDFs can take a frustratingly long time. Much faster searching things up on. Google when connected.. Still, I think I do remember better the slow way, and amvmore likely to try things out from memory. Practicing as with this writing task is important. Recognising patterns and getting comfortable playing around with them.<br />
-<br />
-Document statistics: 361 words, 2105 characters.<br />
-<br />
-Estimated reading time: 1 minutes, 26 seconds.<br />
-<br />
-File path: storage/emulated/0/writer/doc-18.txt<br />
-Last modified: 5 Apr 2017 23:17:25<br />
-Estimated writing time: 10 minutes<br />
-<br />
-Markup time: 10 minutes</p>
-
-
-
-<section id="Box4">
-<h2>Day 4 DWC: 2017-04-04 Tuesday</h2>
-</section>
-
-
-
-<h3>Packed in a dairy that handles nuts: mindfulness and packaging.</h3>
-
-<p>This morning I got up and went to make myself a coffee. Eating a spoonful of basic lemon curd to satisfy a craving for sweetness which I haven&#39;t yet completely overcome since giving up sugar in coffee I perused the words on the packaging of the plastic tub I&#39;d put some instant coffee in the night before. Having sought out a saved handy tub that looked suitable I&#39;d &quot;borrowed&quot; a generous cupful from my daughters full jar to put off a dreaded shopping trip for another day.<br />
-<br />
-Preparing for my mindful session and in the present with a curious eye for reading everything that looks like a word I scanned the label on this tub. Stickers, slogans, attention grabbing headlines, social media icons, humorous puns, accurate measurements and statistics, email, slomail and website contact addresses, recycling advice, proud achievement declarations, international standards observation, a barcode, tasteful design with carefully chosen fonts and colours, associated animals, their shape used as placeholders for words conveying community spirit, the product itself an international delicacy prepared by gourmet expert chefs with live fresh delicious bionutrients.<br />
-<br />
-I could go deeper but the reassuring &quot;suitable for vegetarians&quot; combined with a stencilled union jack cow and the words &quot;packed in a dairy that handles nuts.&quot; Is a reminder. I have a lazy habit of taking care to read labels formed when I became vegetarian in my early twenties. I made this decision because I couldn&#39;t feel alright about animals being put through the horrible process of meat production on an industrial scale. Animals are conscious, they have feelings. To me it&#39;s just wrong, thoughtless, disrespectful and cruel to treat them in this way. But abstaining is not easy, as avoiding too much sugar or salt or eating anything without palm oil in it isn&#39;t. The onus is on yourself when you can read, the information is all there if you care to calculate the optimum quantities.<br />
-<br />
-It all kind of defies common sense and I do think there is such a thing.<br />
-<br />
-I&#39;ve always been interested in packaging and In a lot of ways I can see a similar process with web design. One of the reasons I&#39;m doing this challenge is for the sake of generating content. Having learned a little about coding and bumping up against ipsum lorum est a few times it&#39;s time to consider content.<br />
-<br />
-It just occurred to me that this packaging is not really food but a form of entertainment. Cue use the tub as suggested, I did for that sake of a cup of coffee. Now I feel like I should be vegan.<br />
-<br />
-Mindfulness is helping me think and observe. I have long considered and read books about it and admire the creativity, aesthetics, calmness and clarity, things like zen and haiku and the mirror mind. But meditating as a practice confounded me. I&#39;m way too fidgety to sit still like that. After about a minute I would rather just lie down and go to sleep.<br />
-<br />
-Document details<br />
-<br />
-Document statistics: 500 words, 2966 characters.<br />
-<br />
-Estimated reading time: 2 minutes, 0 seconds.<br />
-<br />
-File path: storage/emulated/0/packed-in-a-dairy-that-handles-nuts-mindfulness-and-packaging.txt<br />
-<br />
-Last modified: 4 Apr 2017 10:54:13<br />
-<br />
-Estimated writing time: 1 hour.<br />
-<br />
-Stage: This writing is raw and unedited, I&#39;m concentrating on the process.<br />
-<br />
-Markup time: 1 hour.</p>
-
-
-
-<section id="Box3">
-<h2>Day 3: 30 DWC 2017-04-03 Monday</h2>
-</section>
-
-
-<h3>Tools for writing</h3>
-
-<p>Today I&#39;m writing about the tools I&#39;m using for this project. Making the task as streamlined as possible has been at the back of my mind in order to avoid procrastination and distraction. The writing itself I am doing on an Android One plus One phone using Writer app with a white background and a Swiftkey keyboard that&#39;s black with white letters. Although I have a powerpack backup for the phone the battery life is very good so I can easily pick up the phone and write offline anywhere.<br />
-<br />
-I can type fairly quickly with my thumb and although the autocorrect/ suggestion thing sometimes overrides what I want to say and I often press v&#39;s instead of the space bar, using the phone is a very effective and convenient tool.<br />
-<br />
-I intend to write the whole piece without editing so as not to interrupt the flow of thinking, then briefly skim over what I have written for grammar, spelling and typo errors. When the first draft is complete and after checking I&#39;ll go to Code Editor the app I have chosen for phone coding, and make a new page from a copy and paste of the one I made yesterday. Next I&#39;ll copy what I&#39;ve written in writer and paste it into the new file.<br />
-<br />
-Using the phone for coding has been a major leap forward in my coding journey. A few months ago I decided to try using code editors on the phone so I could practice anytime offline. To start with this seemed really fiddly but after a while I got the hang of it and now I usually write code first on the phone and actually find it harder using a keyboard and PC. There is something about using a handheld touchscreen which seems to be less of a barrier to the thinking process than a conventional keyboard and screen. This goes well with my thoughts about Responsive web design and mobile first. With the increase in mobile and handheld devices the phone itself feels like a good place to start.<br />
-<br />
-When the writing is in code editor I&#39;ll preview it in several browsers, Chrome Brave, Ghostery, Firefox and Opera, and make some adjustments to the markup. This is an opportunity to learn a bit more about HTML and perhaps try some new things and also have another go at getting more more practice with CSS flexbox . I&#39;ve got HTML and css apps for reference, as well as a substantial phone library to refer to if need be.<br />
-<br />
-Interruptions completely demolish my attempts to focus on the task.<br />
-<br />
-When I get to a wifi connection I send the HTML file to myself as an email attachment via gmail. When on desktop PC I open the file in Notepad++ and upload.</p>
-
-
-
-<section id="Box2">
-<h2>Day 2 DWC: 2017-04-02 Sunday</h2>
-</section>
-
-
-
-<h3>Down by the stream ...</h3>
-
-<p>Its Sunday and its spring. A gorgeous day, blue skies puffy clouds a warm and gentle breeze. Birds singing, chiff-chaff, robin, wren. Starry wood anemones deck the dappled shade of the woodland floor, a few bluebells emerge from a dark green carpet of glossy blades. The air is laced with the scent of primroses.<br />
-<br />
-Flora has visited. I can imagine a beautiful goddess casting her blessings over the countryside.<br />
-<br />
-Reality and imagination. It feels good to observe reality and then let the mind respond with stories.<br />
-<br />
-I do want to write but I hesitate. Transfixed. It&#39;s like going to a supermarket when you&#39;re hungry, there is just too much choice. I guess its getting into the right frame of mind. Once I get going it&#39;ll be OK. The words will flow.<br />
-<br />
-I&#39;ve had a few ideas for what to write about. My coding journey. Cognitive dissonance. A fascination with what&#39;s difficult. Once down by the stream ... The magic of the machine. Anxiety, illusion. I&#39;m reading Yuval Harari&#39;s book Sapiens and I find his historians view of humanity offers new perspectives on some things that I&#39;ve found troubling for a long time. The way we believe in stories is characteristic and what those stories are has consequences.<br />
-<br />
-What is a meta narrative? All the time time I&#39;m learning new things, asking new questions. Filling in gaps and it doesn&#39;t seem to be getting easier.<br />
-<br />
-Follow your passion - I question this. People are always saying it, asking what it is. I think I did that already. I kept horses for years. I loved them their beauty, their affection. Their strength and gracefulness. They lifted my spirits above the mud and mucking out, dreary weather and filling haynets. There was a rhythm to it that felt timeless and connected. Earthed in a way that I understood when all was well with the world. Set fair my sister called it after finishing a morning routine when the ponies were all out contentedly grazing in paddocks and everything was cleaned.<br />
-<br />
-Yes I suppose horses were a passion, but not now. I still miss them terribly, its only just over a year since the last one&#39;s horsey spirit departed. They were my friends. They could be crabby, they could be frightening and often got me worried. Keeping horses was a huge challenge that teased out of me resourcefulness and tenacity I didn&#39;t know I had. It also gave me an enormous appreciation of other living beings and the world we share. They taught me a lot about feelings and emotion which brings me back to the passion thing. Its generally not a good thing for horses to get excited, they may look impressive and wow people but its much nicer when they&#39;re calm and settled.<br />
-<br />
-... of conciousness</p>
-
-
-
-<section id="Box1">
-<h3>Day 1 DWC: 2017-04-01 Saturday</h3>
-</section>
-
-
-
-<h3>Displacement activity</h3>
 
-<p>Having procrastinated for most of the day and earnestly pursued the displacement activity of crafting this web page just a little block of text in my own words. There that wasn&#39;t so bad.</p>
 </body>
+
+</div>
+</div>
+
+<div class='footer'>
+   
+  <div class='footer-item footer-one'><a href="https://www.freecodecamp.com/gipsi"> FreeCodecamp </a></div>
+  <div class='footer-item footer-two'><a href="https://github.com/gipsi"> GitHub </a></div>
+  <div class='footer-item footer-three'><a href="http://codepen.io/gipsi/"> CodePen </a></div>
+</div>
+
+
 </html>
